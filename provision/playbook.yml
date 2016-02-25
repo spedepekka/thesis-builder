@@ -1,0 +1,11 @@
+- hosts: default
+  become_method: sudo
+  pre_tasks:
+    - apt: update_cache=yes name={{ item }} cache_valid_time=3600
+      become: yes
+      with_items:
+        - git
+  roles:
+    - { role: node, become: yes }
+    - gulp
+    - { role: latex, become: yes }

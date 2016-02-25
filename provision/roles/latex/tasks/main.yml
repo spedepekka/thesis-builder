@@ -1,0 +1,10 @@
+
+- name: Install LaTex dependencies
+  apt: name={{ item }} state=installed
+  with_items:
+    - build-essential
+    - texlive
+    - texlive-latex-extra
+    - texlive-lang-finnish
+  become: yes
+

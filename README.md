@@ -14,3 +14,11 @@ This is the setup I've used
 * Virtualbox 5.0.10
 * Ansible 2.0.0.2
 
+## Watch
+
+```
+vagrant ssh
+cd doc
+gulp watch
+```
+

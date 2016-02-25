@@ -1,0 +1,10 @@
+
+- name: Install Gulp CLI
+  npm: global=yes name=gulp-cli
+  become: yes
+
+- name: Install local NPM dependencies
+  npm: name={{ item }} path=~
+  with_items:
+    - gulp
+    - gulp-livereload

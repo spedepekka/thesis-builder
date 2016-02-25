@@ -1,0 +1,17 @@
+
+- name: Add NodeSource signing key
+  apt_key: id=68576280 keyserver=keyserver.ubuntu.com
+
+- name: Add NodeSource PPA
+  apt_repository:
+    repo: 'deb https://deb.nodesource.com/node_5.x trusty main'
+    update_cache: yes
+    state: present
+  become: yes
+
+- name: Install Node
+  apt:
+    name: nodejs
+    state: present
+  become: yes
+
