@@ -1,0 +1,2 @@
+---
+- copy: src=bash_aliases dest=/home/vagrant/.bash_aliases owner=vagrant group=vagrant mode=0644

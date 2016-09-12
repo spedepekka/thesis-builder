@@ -6,6 +6,7 @@
       with_items:
         - git
   roles:
+    - general
     - { role: node, become: yes }
     - gulp
     - { role: latex, become: yes }
