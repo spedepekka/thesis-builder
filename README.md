@@ -5,6 +5,10 @@ Ubuntu + Virtualbox + Vagrant + Ansible + LaTex
 
 This project creates a Ubuntu box which can build my Master's thesis pdf from LaTex sources.
 
+## Notes
+
+This project mounts `../doc` to VM box, because it is meant to be used as a submodule for my thesis repository.
+
 ## Setup
 
 This is the setup I've used
